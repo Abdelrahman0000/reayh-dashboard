@@ -1,3 +1,47 @@
+///////////////nav
+
+$(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    $(".small-nav").toggleClass("show");
+  });
+});
+
+////////////////modal
+// احصل على كل علامة تبويب
+var tabs = document.querySelectorAll("#tabContainer .navLink");
+
+// اضبط event listener لكل علامة تبويب
+tabs.forEach(function (tab) {
+  tab.addEventListener("click", function () {
+    // اغلق جميع المودالات المفتوحة
+    var openModals = document.querySelectorAll(".modal.show");
+    openModals.forEach(function (modal) {
+      var modalInstance = bootstrap.Modal.getInstance(modal);
+      if (modalInstance) {
+        modalInstance.hide();
+      }
+    });
+
+    // افتح المودال المناسب بناءً على علامة التبويب
+    if (tab.getAttribute("href") === "#firstTab") {
+      var firstModal = new bootstrap.Modal(
+        document.getElementById("firstModal")
+      );
+      firstModal.show();
+    } else if (tab.getAttribute("href") === "#secondTab") {
+      var secondModal = new bootstrap.Modal(
+        document.getElementById("secondModal")
+      );
+      secondModal.show();
+    } else if (tab.getAttribute("href") === "#thirdTab") {
+      var thirdModal = new bootstrap.Modal(
+        document.getElementById("thirdModal")
+      );
+      thirdModal.show();
+    }
+  });
+});
+
 /////////////////readmore btn
 function toggleDescription() {
   var description = document.getElementById("description");
