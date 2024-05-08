@@ -1,69 +1,74 @@
-///////////////nav
+///////////////nav/
 
-$(document).ready(function () {
-  $(".navbar-toggler").click(function () {
-    $(".small-nav").toggleClass("show");
+//////////////////////////card of user
+document.addEventListener("DOMContentLoaded", function () {
+  // Get elements
+  var mainUser = document.getElementById("main-user");
+  var userCard = document.getElementById("user-card");
+
+  // Show user card on hover
+  mainUser.addEventListener("mouseenter", function () {
+    mainUser.classList.add("show");
+    userCard.style.display = "block";
   });
-});
 
-////////////////modal
-// احصل على كل علامة تبويب
-var tabs = document.querySelectorAll("#tabContainer .navLink");
+  // Hide user card on mouse leave
+  userCard.addEventListener("mouseleave", function () {
+    mainUser.classList.remove("show");
+    userCard.style.display = "none";
+  });
 
-// اضبط event listener لكل علامة تبويب
-tabs.forEach(function (tab) {
-  tab.addEventListener("click", function () {
-    // اغلق جميع المودالات المفتوحة
-    var openModals = document.querySelectorAll(".modal.show");
-    openModals.forEach(function (modal) {
-      var modalInstance = bootstrap.Modal.getInstance(modal);
-      if (modalInstance) {
-        modalInstance.hide();
-      }
-    });
-
-    // افتح المودال المناسب بناءً على علامة التبويب
-    if (tab.getAttribute("href") === "#firstTab") {
-      var firstModal = new bootstrap.Modal(
-        document.getElementById("firstModal")
-      );
-      firstModal.show();
-    } else if (tab.getAttribute("href") === "#secondTab") {
-      var secondModal = new bootstrap.Modal(
-        document.getElementById("secondModal")
-      );
-      secondModal.show();
-    } else if (tab.getAttribute("href") === "#thirdTab") {
-      var thirdModal = new bootstrap.Modal(
-        document.getElementById("thirdModal")
-      );
-      thirdModal.show();
+  // Hide user card on click outside
+  document.addEventListener("click", function (event) {
+    if (!mainUser.contains(event.target) && !userCard.contains(event.target)) {
+      mainUser.classList.remove("show");
+      userCard.style.display = "none";
     }
   });
+
+  ///////////////////////////////
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var searchBtn = document.getElementById("search-btn");
+  var searchForm = document.querySelector(".search-form");
 
-/////////////////readmore btn
-function toggleDescription() {
-  var description = document.getElementById("description");
-  var button = document.querySelector(".readmore");
-  if (description.classList.contains("expanded")) {
-    description.classList.remove("expanded");
-    //  button.textContent = "Read More";
-    button.querySelector("svg").style.transform = "rotate(0deg)";
-  } else {
-    description.classList.add("expanded");
-    // button.textContent = "Read Less";
-    button.querySelector("svg").style.transform = "rotate(180deg)";
-  }
-}
+  searchBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    searchForm.classList.toggle("active");
+  });
+});
+//////////////////////sidebar
+$(document).ready(function () {
+  console.log(1);
+  $("#menu-btn").click(function (e) {
+    console.log(2);
+    e.preventDefault();
 
-////////////////////////////////gallery swiper
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4.2,
-  spaceBetween: 30,
-  loop: true, // Add this line to enable infinite loop
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    $(".small-sidebar").addClass("active");
+  });
+  $("#cloth-side-bar").click(function (e) {
+    e.preventDefault();
+    $(".side-bar").removeClass("active");
+  });
+  $("#search-btn").click(function (e) {
+    e.preventDefault();
+    $(".search-form").toggleClass("active");
+  });
+
+  $(".accordion").click(function (e) {
+    e.preventDefault();
+
+    $(this).toggleClass("active");
+  });
+
+  $(".shopping-cart .box-container .box i").click(function (e) {
+    e.preventDefault();
+
+    $(this).parent().fadeOut(400);
+  });
+
+  $(window).scroll(function () {
+    $(".search-form").removeClass("active");
+    $(".side-bar").removeClass("active");
+  });
 });
