@@ -50,10 +50,10 @@ $(document).ready(function () {
     e.preventDefault();
     $(".side-bar").removeClass("active");
   });
-  $("#search-btn").click(function (e) {
-    e.preventDefault();
-    $(".search-form").toggleClass("active");
-  });
+  // $("#search-btn").click(function (e) {
+  //   e.preventDefault();
+  //   $(".search-form").toggleClass("active");
+  // });
 
   $(".accordion").click(function (e) {
     e.preventDefault();
@@ -70,5 +70,15 @@ $(document).ready(function () {
   $(window).scroll(function () {
     $(".search-form").removeClass("active");
     $(".side-bar").removeClass("active");
+  });
+});
+/////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const searchBtn = document.querySelector(".search-btn");
+  const searchForm = document.querySelector(".search-form");
+
+  searchBtn.addEventListener("click", function (event) {
+    event.preventDefault(); // prevent default form submission behavior
+    searchForm.classList.toggle("active"); // toggle the 'active' class on the search form
   });
 });

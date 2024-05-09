@@ -98,80 +98,117 @@
         </header>
 
         <div class="page-content">
-        <!-- your code here  -->
-        <div class="topText d-flex align-content-center my-3">
-          <img src="./assets/images/home (1) 1.png" class="d-flex" width="20px" height="25px" alt="">
-          <p><span class="ms-2 fs-5 mainTextDarkGray">/ Dashboard</span></p>
-        </div>
-        
-        <div class="row gx-5">
-          <div class="col-md-8">
-            <div class="row gy-3">
-              <div class="col-md-6">
-                <div class="d-flex justify-content-around align-items-center dash-card mainBgDarkWhite py-4 "
-                  style="border-radius: 20px;">
-                  <div class="containt">
-                    <p class="mainTextBrown">Total User</p>
-                    <h1 class="mainTextDarkGray">2500</h1>
-                  </div>
-                  <div class="img">
-                    <i class="fa-solid fa-user text-white" style="font-size: 90px;"></i>
-                  </div>
-                </div>
+          <main>
+            <!--title order-->
+            <div class="route-name">
+              <i class="fas fa-home"></i>
+              <span>/Order List</span>
+            </div>
 
-              </div>
-              <div class="col-md-6">
-                <div class="d-flex justify-content-around align-items-center mainBgDarkWhite py-3 dash-card"
-                  style="border-radius: 20px;">
-                  <div class="containt">
-                    <p class="mainTextBrown">Total Request</p>
-                    <h1 class="mainTextDarkGray">200</h1>
-                  </div>
-                  <div class="img">
-                    <img src="./assets/images/request (3) 3.svg" width="85px" alt="">
-                  </div>
+            <!---section table-->
+            <section class="rounded-4 shadow-sm my-3 border px-2 py-3">
+              <div class="show-count-search-filter">
+                <!--Show number -->
+                <div class="show-count">
+                  <label for="count">Show:</label>
+                  <input type="number" name id="count" placeholder="10" />
+                </div>
+                <!--Show filter -->
+                <div class="show-filter">
+                  <label for="filter">Filter:</label>
+                  <input
+                    type="text"
+                    name
+                    id="filter"
+                    placeholder="Search.." />
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="d-flex justify-content-around align-items-center mainBgDarkWhite py-3 dash-card"
-                  style="border-radius: 20px;">
-                  <div class="containt">
-                    <p class="mainTextBrown">Total Invoice</p>
-                    <h1 class="mainTextDarkGray">10000+</h1>
-                  </div>
-                  <div class="img">
-                    <img src="./assets/images/invoice 2.svg" width="85px" alt="">
-                  </div>
-                </div>
+              <!--Order list table-->
+              <table class="table my-3 rounded-2">
+                <thead class="table-secondary rounded-2">
+                  <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>222221</td>
+                    <td>Order List</td>
+                    <td>Cairo</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-2"></i><i
+                        class="fas fa-edit m-2"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>222221</td>
+                    <td>Order List</td>
+                    <td>Cairo</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-2"></i><i
+                        class="fas fa-edit m-2"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>222221</td>
+                    <td>Order List</td>
+                    <td>Cairo</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-2"></i><i
+                        class="fas fa-edit m-2"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>222221</td>
+                    <td>Order List</td>
+                    <td>Cairo</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-2"></i><i
+                        class="fas fa-edit m-2"></i>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>222221</td>
+                    <td>Order List</td>
+                    <td>Cairo</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-2"></i><i
+                        class="fas fa-edit m-2"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <!---Footer-->
+            <div class="footer-orders">
+              <div>showing 1 to 10 of 12,785 entries</div>
+              <div>
+                <span>1</span>| <span>2</span>| <span>3</span>| <span>4</span>|
+                <span>5</span>| <span>.....</span>|
+                <span>15</span>
               </div>
-              <div class="col-md-6">
-                <div class="d-flex justify-content-around align-items-center mainBgDarkWhite py-3 dash-card"
-                  style="border-radius: 20px;">
-                  <div class="containt">
-                    <p class="mainTextBrown">Total Hours</p>
-                    <h1 class="mainTextDarkGray">7000+</h1>
-                  </div>
-                  <div class="img">
-                    <img src="./assets/images/dashboard 2.svg" width="85px" alt="">
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4 mt-md-0 mt-4">
-            <div class="mainBgDarkWhite d-flex flex-column justify-content-center align-items-center py-4 " style="border-radius: 20px;">
-              <p class="text-start ps-4 w-100">Charts</p>
-            <div>
-              <img src="./assets/images/bar-graph 1.svg" alt="">
-            </div>
-            <div class="mt-3">
-              <img src="./assets/images/pie-chart 1.svg" alt="">
-            </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
+          </main>
+
         </div>
 
       </div>

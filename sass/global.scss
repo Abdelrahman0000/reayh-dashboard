@@ -131,9 +131,12 @@ ol {
 .main.close .content {
   width: 100%;
 }
+section {
+  overflow-y: auto;
+}
 .content {
   border-radius: 30px 0px 0px 30px;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #fff;
   -webkit-border-radius: 30px 0px 0px 30px;
   -moz-border-radius: 30px 0px 0px 30px;
@@ -280,8 +283,10 @@ ol {
       width: 100%;
       height: 100%;
       right: 0;
-      box-shadow: $box-shadow;
-      height: 6rem;
+      box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      height: 53px;
+
+      -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 0%, 0% 0%);
       clip-path: polygon(0% 0%, 100% 0, 100% 0%, 0% 0%);
     }
     input {
@@ -449,4 +454,114 @@ ol {
 }
 .search-form.active {
   clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.table tr > * {
+  border-left: none;
+  // border-right: 1px solid #aeaeae;
+  padding: 20px 10px;
+}
+
+.table td + td,
+.table th + th {
+  border-left: 1px solid #aeaeae;
+  text-align: center;
+  color: $light-color;
+  //display: flex;
+}
+td.text-primary {
+  display: flex;
+  justify-content: center;
+}
+td {
+  text-align: center;
+}
+th {
+  min-width: 150px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16.5px;
+  text-align: center;
+}
+
+.footer-orders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  @include x-small {
+    flex-direction: column;
+  }
+}
+
+.footer-orders > div:first-child {
+  color: $black;
+}
+
+.footer-orders > div:last-child {
+  background-color: $light-bg;
+  border: 1px solid $black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footer-orders > div:last-child span:nth-child(5) {
+  color: $c-p;
+}
+
+.route-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  color: $black;
+}
+
+.route-name > .fas {
+  color: $c-p;
+}
+
+.show-count-search-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.show-count,
+.show-filter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-count > input {
+  width: 60px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: #eee;
+  padding: 10px 5px;
+}
+
+.show-filter > input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 7px;
+  background-color: #eee;
+}
+
+.stars {
+  cursor: pointer;
+  color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 16px;
 }
