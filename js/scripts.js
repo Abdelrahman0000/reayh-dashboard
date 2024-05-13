@@ -82,3 +82,46 @@ document.addEventListener("DOMContentLoaded", function () {
     searchForm.classList.toggle("active"); // toggle the 'active' class on the search form
   });
 });
+
+////////
+////////
+////////
+////////
+document.addEventListener("DOMContentLoaded", () => {
+  const dropZone = document.getElementById("dropZone");
+
+  // Create hidden file input
+  const fileInput = document.createElement("input");
+  fileInput.type = "file";
+  fileInput.multiple = true;
+  fileInput.style.display = "none";
+  fileInput.addEventListener("change", () => handleFiles(fileInput.files));
+
+  // Append file input to main container
+  dropZone.appendChild(fileInput);
+
+  dropZone.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropZone.classList.add("dragged-over");
+  });
+
+  dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragged-over");
+  });
+
+  dropZone.addEventListener("drop", (e) => {
+    e.preventDefault();
+    dropZone.classList.remove("dragged-over");
+    const files = e.dataTransfer.files;
+    handleFiles(files);
+  });
+
+  // Trigger file input on click
+  dropZone.addEventListener("click", () => {
+    fileInput.click();
+  });
+});
+
+function handleFiles(files) {
+  console.log(`Received ${files.length} files`);
+}

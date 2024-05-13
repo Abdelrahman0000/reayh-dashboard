@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الصفحه الرئيسية</title>
+    <title>مقدم الخدمة</title>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -24,32 +24,36 @@
 
         </div>
         <div class="navbar">
-          <a href="index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-            Dashboard
+          <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
+            لوحة القيادة
           </a>
-          <a href="about.html"><img src="./assets/icons/categories 1.png" alt>
-
-            Order List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider Requirement
+          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            قائمة الطلبات
           </a>
-          <a href="login.html"><img src="./assets/icons/Avatar.png"
+          <a href="./Service-Provider.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            User Management</a>
-          <a href="register.html"><img src="./assets/icons/image-gallery 1.png"
+            قائمة مقدمي الخدمات</a>
+          <a href="./Service-Provider-require.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            Content Management</a>
-          <a href="cart.html"><img src="./assets/icons/invoice 1.png"
+            متطلبات مقدم الخدمة
+          </a>
+          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
               alt>
-            Invoice Management</a>
+            إدارة المستخدمين
+          </a>
+          <a href="./content-mangment.html"><img
+              src="./assets/icons/image-gallery 1.png"
+              alt>
+            إدارة المحتوى
+          </a>
+          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
+              alt>
+            إدارة الفواتير
+          </a>
 
         </div>
 
@@ -60,10 +64,10 @@
           <div class="head-inner">
 
             <div id="menu-btn" class="fas fa-bars "> </div>
-            <h3>Dashboard</h3>
+            <h3>مقدم الخدمة</h3>
             <form class="search-form" action>
               <input type="search" id="search-box"
-                placeholder="Search here..." />
+                placeholder="البحث هنا..." />
               <label for="search-box" class="fas fa-search"></label>
             </form>
             <div class="icons">
@@ -78,8 +82,7 @@
               <div class="main-user fs-6 " id="main-user"><i
                   class="fas fa-user fw-bold fs-4"
                   style='color:#F17629;'></i>
-                <span> User
-                  Name </span>
+                <span> اسم المستخدم </span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                   height="16" fill="currentColor" class="bi bi-caret-up-fill"
                   viewBox="0 0 16 16">
@@ -89,9 +92,9 @@
 
             </div>
             <div class="user-card" id="user-card">
-              <p class="fs-6">User Name</p>
+              <p class="fs-6"> اسم المستخدم </p>
               <button class="btn btn-danger w-100"
-                id="logout-btn ">Logout</button>
+                id="logout-btn ">تسجيل الخروج</button>
             </div>
           </div>
 
@@ -103,7 +106,7 @@
             <!--title order-->
             <div class="route-name">
               <i class="fas fa-home"></i>
-              <span> / Service Provider </span>
+              <span> / مقدم الخدمة </span>
             </div>
 
             <!---section table-->
@@ -111,36 +114,36 @@
               <div class="show-count-search-filter">
                 <!--Show number -->
                 <div class="show-count">
-                  <label for="count">Show:</label>
+                  <label for="count">عرض:</label>
                   <input type="number" name id="count" placeholder="10" />
                 </div>
                 <!--Show filter -->
                 <div class="show-filter">
-                  <label for="filter">Filter:</label>
+                  <label for="filter">تصفية:</label>
                   <input
                     type="text"
                     name
                     id="filter"
-                    placeholder="Search.." />
+                    placeholder="البحث..." />
                 </div>
               </div>
               <!--Order list table-->
               <table class="table my-3 rounded-2">
                 <thead class="table-secondary rounded-2">
                   <tr>
-                    <th scope="col">Provider Name</th>
-                    <th scope="col">Rate</th>
-                    <th scope="col">Started Date</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Service Category</th>
-                    <th scope="col">Phone Number</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">اسم المزود</th>
+                    <th scope="col">التقييم</th>
+                    <th scope="col">تاريخ البدء</th>
+                    <th scope="col">العنوان</th>
+                    <th scope="col">فئة الخدمة</th>
+                    <th scope="col">رقم الهاتف</th>
+                    <th scope="col">البريد الإلكتروني</th>
+                    <th scope="col">الإجراء</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -150,10 +153,11 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -162,7 +166,7 @@
                   </tr>
 
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -172,10 +176,11 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -183,7 +188,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -193,10 +198,11 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -204,7 +210,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -214,10 +220,11 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -225,7 +232,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -235,10 +242,11 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -246,7 +254,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>0</td>
+                    <td>ahmed</td>
                     <td>
                       <div class="stars">
                         <i class="fas fa-star stars"></i>
@@ -256,10 +264,55 @@
                         <i class="fas fa-star stars"></i>
                       </div>
                     </td>
+
+                    <td>02/05/223</td>
                     <td>Cairo</td>
+                    <td>1</td>
                     <td>01224384697</td>
-                    <td>example@gmail</td>
-                    <td>example@gmail</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-1"></i><i
+                        class="fas fa-edit m-1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ahmed</td>
+                    <td>
+                      <div class="stars">
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                      </div>
+                    </td>
+
+                    <td>02/05/223</td>
+                    <td>Cairo</td>
+                    <td>1</td>
+                    <td>01224384697</td>
+                    <td>example@gmail.com</td>
+                    <td class="text-primary">
+                      <i class="fa fa-eye m-1"></i><i
+                        class="fas fa-edit m-1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ahmed</td>
+                    <td>
+                      <div class="stars">
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                        <i class="fas fa-star stars"></i>
+                      </div>
+                    </td>
+
+                    <td>02/05/223</td>
+                    <td>Cairo</td>
+                    <td>1</td>
+                    <td>01224384697</td>
                     <td>example@gmail.com</td>
                     <td class="text-primary">
                       <i class="fa fa-eye m-1"></i><i
@@ -282,7 +335,6 @@
         </div>
 
       </div>
-
       <div class="side-bar small-sidebar">
         <div class="fas fa-times" id="cloth-side-bar"></div>
         <!-- // <div class="fas fa-times" id="cloth-side-bar"></div> -->
@@ -291,32 +343,36 @@
 
         </div>
         <div class="navbar">
-          <a href="index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-            Dashboard
+          <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
+            لوحة القيادة
           </a>
-          <a href="about.html"><img src="./assets/icons/categories 1.png" alt>
-
-            Order List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider Requirement
+          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            قائمة الطلبات
           </a>
-          <a href="login.html"><img src="./assets/icons/Avatar.png"
+          <a href="./Service-Provider.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            User Management</a>
-          <a href="register.html"><img src="./assets/icons/image-gallery 1.png"
+            قائمة مقدمي الخدمات</a>
+          <a href="./Service-Provider-require.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            Content Management</a>
-          <a href="cart.html"><img src="./assets/icons/invoice 1.png"
+            متطلبات مقدم الخدمة
+          </a>
+          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
               alt>
-            Invoice Management</a>
+            إدارة المستخدمين
+          </a>
+          <a href="./content-mangment.html"><img
+              src="./assets/icons/image-gallery 1.png"
+              alt>
+            إدارة المحتوى
+          </a>
+          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
+              alt>
+            إدارة الفواتير
+          </a>
 
         </div>
 

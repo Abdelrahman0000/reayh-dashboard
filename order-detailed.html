@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,32 +24,36 @@
 
         </div>
         <div class="navbar">
-          <a href="index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-            Dashboard
+          <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
+            لوحة القيادة
           </a>
-          <a href="about.html"><img src="./assets/icons/categories 1.png" alt>
-
-            Order List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider Requirement
+          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            قائمة الطلبات
           </a>
-          <a href="login.html"><img src="./assets/icons/Avatar.png"
+          <a href="./Service-Provider.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            User Management</a>
-          <a href="register.html"><img src="./assets/icons/image-gallery 1.png"
+            قائمة مقدمي الخدمات</a>
+          <a href="./Service-Provider-require.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            Content Management</a>
-          <a href="cart.html"><img src="./assets/icons/invoice 1.png"
+            متطلبات مقدم الخدمة
+          </a>
+          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
               alt>
-            Invoice Management</a>
+            إدارة المستخدمين
+          </a>
+          <a href="./content-mangment.html"><img
+              src="./assets/icons/image-gallery 1.png"
+              alt>
+            إدارة المحتوى
+          </a>
+          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
+              alt>
+            إدارة الفواتير
+          </a>
 
         </div>
 
@@ -60,10 +64,10 @@
           <div class="head-inner">
 
             <div id="menu-btn" class="fas fa-bars "> </div>
-            <h3> Order Detailed </h3>
+            <h3> تفاصيل الطلب </h3>
             <form class="search-form" action>
               <input type="search" id="search-box"
-                placeholder="Search here..." />
+                placeholder="البحث هنا..." />
               <label for="search-box" class="fas fa-search"></label>
             </form>
             <div class="icons">
@@ -78,8 +82,7 @@
               <div class="main-user fs-6 " id="main-user"><i
                   class="fas fa-user fw-bold fs-4"
                   style='color:#F17629;'></i>
-                <span> User
-                  Name </span>
+                <span> اسم المستخدم </span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                   height="16" fill="currentColor" class="bi bi-caret-up-fill"
                   viewBox="0 0 16 16">
@@ -89,9 +92,9 @@
 
             </div>
             <div class="user-card" id="user-card">
-              <p class="fs-6">User Name</p>
+              <p class="fs-6"> اسم المستخدم </p>
               <button class="btn btn-danger w-100"
-                id="logout-btn ">Logout</button>
+                id="logout-btn ">تسجيل الخروج</button>
             </div>
           </div>
 
@@ -102,7 +105,7 @@
             <!--title order-->
             <div class="route-name">
               <i class="fas fa-home"></i>
-              <span> / Order Detailed </span>
+              <span> / تفاصيل الطلب </span>
             </div>
 
             <!---section table-->
@@ -110,17 +113,17 @@
             <div class="order-detial my-3">
 
               <div class="order-id">
-                <p> Order ID 965455</p>
+                <p> معرف الطلب(id) 965455</p>
               </div>
 
               <div class="order-detial-container  ">
                 <div class="card user-order-massage">
-                  <p class="title">User Details </p>
-                  <p class="user-name"> <span>A</span> User Name</p>
+                  <p class="title">تفاصيل المستخدم </p>
+                  <p class="user-name"> <span>A</span> اسم المستخدم</p>
                   <div class="massege">
 
                     <p class="massege-text">
-                      User_4525545: I need ...
+                      مستخدم_4525545: أحتاج إلى ...
                     </p>
 
                     <div class="icons">
@@ -131,37 +134,36 @@
                 </div>
 
                 <div class="card details">
-
-                  <h3>Order DETAILS</h3>
+                  <h3>تفاصيل الطلب</h3>
                   <div class="detail-container">
                     <div class="start-date">
                       <div class="group-detail"> <div class="detail-desc">
-                          <span>Starting Date</span> <p>25 Apr 2024</p> </div>
+                          <span>تاريخ البدء</span> <p>25 أبريل 2024</p> </div>
                         <div
-                          class="detail-desc"> <span>Duration</span> <p>4
-                            Hours</p></div> </div>
+                          class="detail-desc"> <span>المدة</span> <p>4
+                            ساعات</p></div> </div>
                       <div class="group-detail"> <div class="detail-desc">
-                          <span>Budget</span> <p>372 SR</p> </div>
+                          <span>الميزانية</span> <p>372 ريال سعودي</p> </div>
                         <div
-                          class="detail-desc"> <span>No. of user</span> <p> 3
-                            Children</p></div> </div>
+                          class="detail-desc"> <span>عدد المستخدمين</span> <p>3
+                            أطفال</p></div> </div>
                     </div>
                     <div class="end-date">
                       <div class="group-detail"> <div class="detail-desc">
-                          <span>End Date</span> <p>25 Apr 2024</p> </div>
+                          <span>تاريخ الانتهاء</span> <p>25 أبريل 2024</p>
+                        </div>
                         <div
-                          class="detail-desc"> <span>End Time</span> <p>00:08
-                            pm</p></div> </div>
+                          class="detail-desc"> <span>وقت الانتهاء</span>
+                          <p>08:00 مساءً</p></div> </div>
                       <div class="group-detail"> <div class="detail-desc">
-                          <span>City</span> <p>Riyadh</p> </div>
+                          <span>المدينة</span> <p>الرياض</p> </div>
                         <div
-                          class="detail-desc"> <span>Address</span> <p> Abu
-                            Baker Roud</p></div> </div>
-
+                          class="detail-desc"> <span>العنوان</span> <p>شارع أبو
+                            بكر</p></div> </div>
                     </div>
-
                   </div>
                 </div>
+
               </div>
 
             </div>
@@ -173,7 +175,6 @@
         </div>
 
       </div>
-
       <div class="side-bar small-sidebar">
         <div class="fas fa-times" id="cloth-side-bar"></div>
         <!-- // <div class="fas fa-times" id="cloth-side-bar"></div> -->
@@ -182,32 +183,36 @@
 
         </div>
         <div class="navbar">
-          <a href="index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-            Dashboard
+          <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
+            لوحة القيادة
           </a>
-          <a href="about.html"><img src="./assets/icons/categories 1.png" alt>
-
-            Order List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider List</a>
-          <a href="products.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-            Service Provider Requirement
+          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            قائمة الطلبات
           </a>
-          <a href="login.html"><img src="./assets/icons/Avatar.png"
+          <a href="./Service-Provider.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            User Management</a>
-          <a href="register.html"><img src="./assets/icons/image-gallery 1.png"
+            قائمة مقدمي الخدمات</a>
+          <a href="./Service-Provider-require.html"><img
+              src="./assets/icons/request (3) 1.png"
               alt>
 
-            Content Management</a>
-          <a href="cart.html"><img src="./assets/icons/invoice 1.png"
+            متطلبات مقدم الخدمة
+          </a>
+          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
               alt>
-            Invoice Management</a>
+            إدارة المستخدمين
+          </a>
+          <a href="./content-mangment.html"><img
+              src="./assets/icons/image-gallery 1.png"
+              alt>
+            إدارة المحتوى
+          </a>
+          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
+              alt>
+            إدارة الفواتير
+          </a>
 
         </div>
 
