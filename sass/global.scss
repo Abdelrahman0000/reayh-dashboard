@@ -173,6 +173,21 @@ section {
   }
   .navbar {
     padding-top: 30px;
+    max-height: 460px;
+    margin: 40px 0;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #ccc;
+      border-radius: 5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $c-p;
+      border-radius: 5rem;
+    }
     a {
       display: block !important;
       width: 100%;
@@ -398,8 +413,8 @@ section {
     position: absolute;
     top: 1rem;
     right: 2rem;
-    color: $light-color;
-    font-size: 4rem;
+    color: $c-w;
+    font-size: 2rem;
     cursor: pointer;
 
     &:hover {
@@ -419,6 +434,21 @@ section {
   }
   .navbar {
     padding-top: 30px;
+    margin: 40px 0;
+    overflow-y: scroll;
+    max-height: 460px;
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #ccc;
+      border-radius: 5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $c-p;
+      border-radius: 5rem;
+    }
     a {
       display: block !important;
       width: 100%;
@@ -427,7 +457,7 @@ section {
       font-size: 14px;
       font-weight: 400;
       line-height: 50px;
-      text-align: left;
+
       color: $c-w;
       margin-bottom: 5px;
       img {
