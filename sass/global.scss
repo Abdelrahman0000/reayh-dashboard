@@ -9,7 +9,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.fa-bars {
+  font-size: 0.9rem;
+  color: #a6a6a6;
+}
 body {
   font-size: 14px;
   overflow-x: hidden;
@@ -156,6 +159,14 @@ section {
   background-color: #706e57;
   transition: all 0.5s ease-in-out;
   padding: 20px;
+  #cloth-side-bar {
+    display: none;
+  }
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   @include medium {
     display: block;
 
@@ -184,7 +195,7 @@ section {
       color: $c-w;
       font-size: 2rem;
       cursor: pointer;
-
+      display: block;
       &:hover {
         transform: rotate(90deg);
         color: $black;
@@ -280,13 +291,15 @@ section {
     font-family: Poppins;
     font-size: 30px;
     font-weight: 600;
-    line-height: 50.5px;
+    line-height: 100%;
     color: #a6a6a6;
+    margin: 0;
     @include small {
       font-size: 20px;
       line-height: 40px;
     }
   }
+
   .search-btn {
     display: none;
     @include medium {
@@ -420,97 +433,7 @@ section {
 .user-card:hover {
   display: block;
 }
-.small-sidebar {
-  display: none;
-  @include medium {
-    display: block;
-  }
 
-  transition: all 0.5s linear;
-  position: fixed;
-  top: 0;
-  left: -300%;
-  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-  background-color: #706e57;
-  z-index: 10000;
-
-  height: 100vh;
-  width: 300px;
-  background-color: #706e57;
-  transition: all 0.5s ease-in-out;
-  padding: 20px;
-  &.active {
-    left: 0;
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
-  }
-
-  #cloth-side-bar {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    color: $c-w;
-    font-size: 2rem;
-    cursor: pointer;
-
-    &:hover {
-      transform: rotate(90deg);
-      color: $black;
-    }
-  }
-  .user {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
-    img {
-      width: 150px;
-
-      margin-bottom: 0.5rem;
-    }
-  }
-  .navbar {
-    padding-top: 30px;
-    margin: 40px 0;
-    overflow-y: scroll;
-    max-height: 460px;
-    &::-webkit-scrollbar {
-      width: 1rem;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: #ccc;
-      border-radius: 5rem;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $c-p;
-      border-radius: 5rem;
-    }
-    a {
-      display: block !important;
-      width: 100%;
-      text-decoration: underline;
-      font-family: Poppins;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 50px;
-
-      color: $c-w;
-      margin-bottom: 5px;
-      img {
-        width: 35px;
-        margin-bottom: 10px;
-        margin-right: 5px;
-      }
-      &:hover {
-        i {
-          padding-right: 2rem;
-        }
-      }
-      i {
-        padding-right: 0.5rem;
-      }
-    }
-  }
-}
 #menu-btn {
   display: none;
   @include medium {
