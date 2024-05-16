@@ -17,7 +17,7 @@
   <body>
     <div class="main" id="main">
           <div class="sidebar big-sidebar">
-
+ <div class="fas fa-times" id="cloth-side-bar"></div>
         <!-- // <div class="fas fa-times" id="cloth-side-bar"></div> -->
         <div class="user">
           <img src="./assets/images/logo-app.png" />
@@ -25,60 +25,73 @@
         </div>
         <div class="navbar">
           <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-           لوحة القيادة
-          </a>
+       <span>    لوحة القيادة
+</span>          </a>
           <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            <span>
 قائمة الطلبات
-           </a>
+        </span>   </a>
           <a href="./Service-Provider.html"><img src="./assets/icons/request (3) 1.png"
               alt>
 
-           قائمة مقدمي الخدمات</a>
+     <span>      قائمة مقدمي الخدمات </span></a>
           <a href="./Service-Provider-require.html"><img src="./assets/icons/request (3) 1.png"
               alt>
-
+<span>
            متطلبات مقدم الخدمة
+           </span>
           </a>
           <a href="./user-mange"><img src="./assets/icons/Avatar.png"
               alt>
+              <span>
 إدارة المستخدمين
+</span>
            </a>
           <a href="./content-mangment.html"><img src="./assets/icons/image-gallery 1.png"
               alt>
+              <span>
 إدارة المحتوى
+</span>
             </a>
              <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-           لوحة القيادة
-          </a>
+          <span>  لوحة القيادة
+</span>          </a>
           <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
+            <span>
 قائمة الطلبات
-           </a>
+     </span>      </a>
           <a href="./Service-Provider.html"><img src="./assets/icons/request (3) 1.png"
               alt>
 
-           قائمة مقدمي الخدمات</a>
+       <span>    قائمة مقدمي الخدمات </span></a>
           <a href="./Service-Provider-require.html"><img src="./assets/icons/request (3) 1.png"
               alt>
 
-           متطلبات مقدم الخدمة
-          </a>
-          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
-              alt>
-إدارة المستخدمين
-           </a>
-          <a href="./content-mangment.html"><img src="./assets/icons/image-gallery 1.png"
-              alt>
-إدارة المحتوى
-            </a>
-          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
-              alt>
-              إدارة الفواتير
-           </a>
-          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
-              alt>
-              إدارة الفواتير
-           </a>
+      <span>     متطلبات مقدم الخدمة
+       </span>
+         </a>
+          <div class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown(1)">
+            <a class='drop-a'><i class="fa-solid fa-users"></i> <span class="dropdown-icon">مقدمي الرعاية</span> </a>
+        </div>
+        <div class="dropdown-content " id="dropdown-content-1">
+            <a href="#" > <i class="fa-regular fa-circle"></i> <span> مقدمي الرعاية</span></a>
+            <a href="#"><i class="fa-regular fa-circle"></i><span> مقدمي الرعاية</span></a>
+            <a href="#"><i class="fa-regular fa-circle"></i><span> مقدمي الرعاية</span></a>
+        </div>
+    </div>
 
+  <div class="dropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown(2)">
+            <a class='drop-a'><i class="fa-solid fa-users"></i> <span class="dropdown-icon">مقدمي الرعاية</span> </a>
+        </div>
+        <div class="dropdown-content " id="dropdown-content-2">
+            <a href="#" > <i class="fa-regular fa-circle"></i> <span> مقدمي الرعاية</span></a>
+            <a href="#"><i class="fa-regular fa-circle"></i><span> مقدمي الرعاية</span></a>
+            <a href="#"><i class="fa-regular fa-circle"></i><span> مقدمي الرعاية</span></a>
+        </div>
+    </div>
+        
         </div>
 
       </div>
@@ -202,71 +215,7 @@
         </div>
 
       </div>
-  <div class="side-bar small-sidebar">
-        <div class="fas fa-times" id="cloth-side-bar"></div>
-        <!-- // <div class="fas fa-times" id="cloth-side-bar"></div> -->
-        <div class="user">
-          <img src="./assets/images/logo-app.png" />
-
-        </div>
-         <div class="navbar">
-          <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-           لوحة القيادة
-          </a>
-          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
-قائمة الطلبات
-           </a>
-          <a href="./Service-Provider.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-           قائمة مقدمي الخدمات</a>
-          <a href="./Service-Provider-require.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-           متطلبات مقدم الخدمة
-          </a>
-          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
-              alt>
-إدارة المستخدمين
-           </a>
-          <a href="./content-mangment.html"><img src="./assets/icons/image-gallery 1.png"
-              alt>
-إدارة المحتوى
-            </a>
-          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
-              alt>
-              إدارة الفواتير
-           </a>
- <a href="./index.html"><img src="./assets/icons/dashboard 1.svg" alt>
-           لوحة القيادة
-          </a>
-          <a href="./order.html"><img src="./assets/icons/categories 1.png" alt>
-قائمة الطلبات
-           </a>
-          <a href="./Service-Provider.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-           قائمة مقدمي الخدمات</a>
-          <a href="./Service-Provider-require.html"><img src="./assets/icons/request (3) 1.png"
-              alt>
-
-           متطلبات مقدم الخدمة
-          </a>
-          <a href="./user-mange"><img src="./assets/icons/Avatar.png"
-              alt>
-إدارة المستخدمين
-           </a>
-          <a href="./content-mangment.html"><img src="./assets/icons/image-gallery 1.png"
-              alt>
-إدارة المحتوى
-            </a>
-          <a href="./invoice-management"><img src="./assets/icons/invoice 1.png"
-              alt>
-              إدارة الفواتير
-           </a>
-        </div>
-
-      </div>
+ 
     </div>
 
     <!-- First, load jQuery -->

@@ -28,6 +28,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ///////////////////////////////
 });
+
+// Toggle dropdown
+let activeDropdown = null;
+
+function toggleDropdown(index) {
+  const dropdownContent = document.getElementById(`dropdown-content-${index}`);
+
+  if (activeDropdown !== null && activeDropdown !== index) {
+    const activeDropdownContent = document.getElementById(
+      `dropdown-content-${activeDropdown}`
+    );
+    activeDropdownContent.style.display = "none";
+  }
+
+  dropdownContent.style.display =
+    dropdownContent.style.display === "block" ? "none" : "block";
+  activeDropdown = index;
+}
+
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.className =
+    sidebar.className === "sidebar show" ? "sidebar hide" : "sidebar show";
+}
+
+////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function () {
   var searchBtn = document.getElementById("search-btn");
   var searchForm = document.querySelector(".search-form");
@@ -44,11 +70,11 @@ $(document).ready(function () {
     console.log(2);
     e.preventDefault();
 
-    $(".small-sidebar").addClass("active");
+    $(".sidebar").addClass("active");
   });
   $("#cloth-side-bar").click(function (e) {
     e.preventDefault();
-    $(".side-bar").removeClass("active");
+    $(".sidebar").removeClass("active");
   });
   // $("#search-btn").click(function (e) {
   //   e.preventDefault();
@@ -125,3 +151,4 @@ document.addEventListener("DOMContentLoaded", () => {
 function handleFiles(files) {
   console.log(`Received ${files.length} files`);
 }
+///////////////////////////////////////////////
